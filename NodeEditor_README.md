@@ -32,15 +32,15 @@ Auto-validates links and manages cleanup.
 Scalable background grid that pans with the view.
 
 ## 🚀 Getting Started
-Drop a NodeEditor prefab into your scene.
+Set up the UI Extension System in your scene.
 
-Assign:
-- Node Prefabs
-- Connection Prefab
-- Background Grid
-- UI Extension Manager (auto-assigned at runtime)
-- Press Play and right-click to spawn nodes.
-- To create a custom node, inherit from Node and plug it into the nodesPrefabs list.
+Add a NodeEditor GameObject and configure:
+- nodesPrefabs → Your custom node prefabs
+- connectionPrefab → Bezier line prefab (Use UICurveRenderer component for visual)
+- grid → A GridBackground
+- nodeParent, connectionParent, and cursor
+- Right-click to open the context menu and spawn nodes.
+- Click & drag from one node port to another to create a connection.
 
 ## 💡 Use Cases
 Dialogue trees
