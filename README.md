@@ -53,6 +53,6 @@ ExtButton btn = GetComponent<ExtButton>();
 btn.mouseButton = 1; // Right click
 btn.clickType = ClickType.Down;
 btn.onClick.AddListener(() => Debug.Log("Right click!"));
-```csharp
+```
 
 👉 For an example implementation, see the [`NodeEditor_README.md`](NodeEditor_README.md)
