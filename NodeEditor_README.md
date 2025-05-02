@@ -4,12 +4,12 @@ A modular runtime node editor built on top of the UI Extension System. Designed 
 ⚠️ Requires: UI Extension System
 
 ## ✨ Features : 
- > 🧱 Modular Node System – Plug in your own node prefabs
- > 🔌 Connection System – Click + drag to connect logic
- > 🖱️ Context Menu – Right-click to spawn nodes
- > 🖼️ Zoom & Pan – Navigate with scroll and drag
- > 🧩 Serialized Data Support – Easily expand with save/load
- > 🎨 Procedural Grid Background – UI-based background grid
+ . 🧱 Modular Node System – Plug in your own node prefabs
+ . 🔌 Connection System – Click + drag to connect logic
+ . 🖱️ Context Menu – Right-click to spawn nodes
+ . 🖼️ Zoom & Pan – Navigate with scroll and drag
+ . 🧩 Serialized Data Support – Easily expand with save/load
+ . 🎨 Procedural Grid Background – UI-based background grid
 
 ## 📦 Components
 NodeEditor
