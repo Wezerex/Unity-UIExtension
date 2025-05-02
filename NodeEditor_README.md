@@ -11,24 +11,24 @@ A modular runtime node editor built on top of the UI Extension System. Designed 
 - 🧩 Serialized Data Support – Easily expand with save/load
 - 🎨 Procedural Grid Background – UI-based background grid
 
-## 📦 Components
-NodeEditor
+## 📦 Components :
+- NodeEditor
 Manages nodes, connections, input, and UI.
 Contains prefab references and runtime management.
 
-Node
+- Node
 Base class for custom node logic (e.g., DialogueNode, MathNode).
 Handles connections and selection behavior.
 
-Connection
+- Connection
 Visual Bezier curve linking outPoint → inPoint.
 Clickable with hover feedback and visual styling.
 
-ConnectionPoint
+- ConnectionPoint
 Define how many connections are allowed, their types (in, out).
 Auto-validates links and manages cleanup.
 
-ProceduralGridBackground
+- ProceduralGridBackground
 Scalable background grid that pans with the view.
 
 ## 🚀 Getting Started
