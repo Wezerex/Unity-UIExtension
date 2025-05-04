@@ -56,8 +56,6 @@ Creating a class that inherits from Node is recommended for serialization and gr
 Example:
 
 ```csharp
-Copier
-Modifier
 public class SimpleText : Node
 {
     public InputField text;
