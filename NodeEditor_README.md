@@ -32,15 +32,11 @@ Auto-validates links and manages cleanup.
 Scalable background grid that pans with the view.
 
 ## 🚀 Getting Started
-Set up the UI Extension System in your scene.
+- Set up the UI Extension System in your scene.
+- Open the demo scene, or create a prefab using the NodeEditor GameObject.
+- Customize parameters and node prefabs to fit your design.
 
-Add a NodeEditor GameObject and configure:
-- nodesPrefabs → Your custom node prefabs
-- connectionPrefab → Bezier line prefab (Use UICurveRenderer component for visual)
-- grid → A GridBackground
-- nodeParent, connectionParent, and cursor
-- Right-click to open the context menu and spawn nodes.
-- Click & drag from one node port to another to create a connection.
+⚠️ Note: The UiExtManager component must be present in your scene for input handling.
 
 ## 💡 Use Cases
 Dialogue trees
@@ -53,6 +49,31 @@ Modular behaviors
 Nodes are prefabs with logic → fully modular
 Add buttons, fields, ports, or event hooks as needed
 Editor can be reset/cleared/loaded at runtime
+
+## Creating Nodes
+Design your own nodes as prefab variants of the base Node class using standard Unity UI components.
+Creating a class that inherits from Node is recommended for serialization and graph reconstruction.
+Example:
+
+''' csharp
+Copier
+Modifier
+public class SimpleText : Node
+{
+    public InputField text;
+}
+
+[System.Serializable]
+public class SimpleTextSerialized : SerializedNode
+{
+    public string text;
+
+    public SimpleTextSerialized(Node node, SimpleText simpleText) : base(node)
+    {
+        text = simpleText.text.text;
+    }
+}
+'''
 
 ## 📝 Notes
 Not a graph logic executor — intended for visual layout and wiring.
