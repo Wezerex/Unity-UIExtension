@@ -55,7 +55,7 @@ Design your own nodes as prefab variants of the base Node class using standard U
 Creating a class that inherits from Node is recommended for serialization and graph reconstruction.
 Example:
 
-''' csharp
+```csharp
 Copier
 Modifier
 public class SimpleText : Node
@@ -73,7 +73,7 @@ public class SimpleTextSerialized : SerializedNode
         text = simpleText.text.text;
     }
 }
-'''
+```
 
 ## 📝 Notes
 Not a graph logic executor — intended for visual layout and wiring.
